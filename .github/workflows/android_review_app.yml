@@ -1,0 +1,27 @@
+name: Android Reviews App
+
+on:
+  push:
+    branches: [ test ]
+  push_request:
+    branches: [ test ]
+
+  workflow_dispatch:
+
+
+jobs:
+
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout the code
+      uses: actions/checkout@v2
+
+    - name: Set up JDK
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+
+    - name: Build the app
+      run: ./gradlew assembleRelease
+
+

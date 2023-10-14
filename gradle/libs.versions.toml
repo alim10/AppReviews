@@ -34,5 +34,7 @@ materialCompose = { group = "androidx.compose.material", name = "material", vers
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
+#androidLibrary = { id = "com.android.library", name = "library"}
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
 

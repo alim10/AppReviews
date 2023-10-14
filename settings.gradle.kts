@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "AppReviews"
 include(":app")
-include(":common")
+//include(":common")
+include(":core")
