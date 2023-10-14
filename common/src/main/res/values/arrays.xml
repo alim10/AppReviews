@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="language_code">
+        <item>@string/txt_language_english_code</item>
+        <item>@string/txt_language_arabic_code</item>
+    </array>
+    <array name="language_name">
+        <item>@string/txt_language_english</item>
+        <item>@string/txt_language_arabic</item>
+    </array>
+
+    <array name="language_image">
+        <item>@mipmap/ic_language_english</item>
+        <item>@mipmap/ic_language_arabic</item>
+    </array>
+
+    <array name="profile_title">
+        <item>@string/txt_payment</item>
+        <item>@string/txt_update_profile</item>
+        <item>@string/txt_message</item>
+        <item>@string/txt_calendar</item>
+        <item>@string/txt_statistics</item>
+        <item>@string/txt_settings</item>
+        <item>@string/txt_manage_employee</item>
+        <item>@string/txt_my_address</item>
+        <item>@string/txt_faq</item>
+        <item>@string/txt_help_support</item>
+        <item>@string/txt_name</item>
+        <item>@string/txt_name</item>
+        <item>@string/txt_language</item>
+        <item>@string/txt_logout</item>
+
+    </array>
+
+    <array name="profile_title_icon">
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_home_black_24dp</item>
+    </array>
+
+    <array name="gender">
+        <item>@string/txt_male</item>
+        <item>@string/txt_female</item>
+    </array>
+
+    <array name="marital_status">
+        <item>@string/txt_single</item>
+        <item>@string/txt_married</item>
+<!--        <item>@string/txt_divorced</item>-->
+<!--        <item>@string/txt_widowed</item>-->
+    </array>
+
+    <array name="income">
+        <item>@string/txt_500_1000</item>
+        <item>@string/txt_1000_5000</item>
+        <item>@string/txt_5000_10000</item>
+        <item>@string/txt_10000_20000</item>
+        <item>@string/txt_20000_50000</item>
+        <item>@string/txt_500000_1000000</item>
+        <item>@string/txt_1000000_more</item>
+    </array>
+
+    <array name="qualification">
+        <item>@string/txt_primary</item>
+        <item>@string/txt_secondary</item>
+        <item>@string/txt_diploma</item>
+        <item>@string/txt_bachelor</item>
+        <item>@string/txt_master</item>
+        <item>@string/txt_phd</item>
+    </array>
+
+    <array name="occupation">
+        <item>OCCUPATION_1</item>
+        <item>OCCUPATION_2</item>
+        <item>OCCUPATION_3</item>
+        <item>OCCUPATION_4</item>
+        <item>OCCUPATION_5</item>
+        <item>OCCUPATION_6</item>
+        <item>OCCUPATION_7</item>
+        <item>OCCUPATION_8</item>
+        <item>OCCUPATION_9</item>
+        <item>OCCUPATION_10</item>
+
+    </array>
+
+
+<!--    <array name="occupation">-->
+<!--        <item>@string/txt_high_student</item>-->
+<!--        <item>@string/txt_university</item>-->
+<!--        <item>@string/txt_engineer</item>-->
+<!--        <item>@string/txt_doctors</item>-->
+<!--        <item>@string/txt_nurse</item>-->
+<!--        <item>@string/txt_teacher</item>-->
+<!--        <item>@string/txt_teacher_assistant</item>-->
+<!--        <item>@string/txt_driver</item>-->
+<!--        <item>@string/txt_executives</item>-->
+<!--        <item>@string/txt_managers</item>-->
+<!--        <item>@string/txt_secretaries</item>-->
+<!--        <item>@string/txt_IT</item>-->
+<!--        <item>@string/txt_police</item>-->
+<!--        <item>@string/txt_military</item>-->
+<!--        <item>@string/txt_security_guard</item>-->
+<!--        <item>@string/txt_waiter</item>-->
+<!--        <item>@string/txt_cashier</item>-->
+<!--        <item>@string/txt_sales</item>-->
+<!--        <item>@string/txt_marketing</item>-->
+<!--        <item>@string/txt_designers</item>-->
+<!--        <item>@string/txt_machine_operator</item>-->
+<!--        <item>@string/txt_mechanics</item>-->
+<!--        <item>@string/txt_housekeeping</item>-->
+<!--        <item>@string/txt_student</item>-->
+<!--        <item>@string/txt_storekeeper</item>-->
+<!--        <item>@string/txt_technicians</item>-->
+<!--        <item>@string/txt_electricians</item>-->
+<!--        <item>@string/txt_plumber</item>-->
+<!--        <item>@string/txt_factory_worker</item>-->
+<!--        <item>@string/txt_farmer</item>-->
+<!--        <item>@string/txt_fireman</item>-->
+<!--        <item>@string/txt_pilot</item>-->
+<!--        <item>@string/txt_sailor</item>-->
+<!--        <item>@string/txt_steward</item>-->
+<!--        <item>@string/txt_hostess</item>-->
+<!--        <item>@string/txt_journalist</item>-->
+<!--        <item>@string/txt_cameraman</item>-->
+<!--        <item>@string/txt_photographer</item>-->
+<!--        <item>@string/txt_unemployed</item>-->
+<!--        <item>@string/txt_other</item>-->
+<!--    </array>-->
+
+    <array name="auto_size_text">
+        <item>@dimen/size_app_text_very_small</item>
+        <item>@dimen/size_app_label_small</item>
+        <item>@dimen/size_app_text_small</item>
+        <item>@dimen/size_app_label_regular</item>
+        <item>@dimen/size_app_text_regular</item>
+        <item>@dimen/size_app_text_medium</item>
+        <item>@dimen/size_app_text_large</item>
+        <item>@dimen/size_app_text_large_x</item>
+    </array>
+
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+</resources>

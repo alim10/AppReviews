@@ -1,0 +1,618 @@
+<resources>
+    <string name="app_name">Karwaty</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_discover">Discover</string>
+    <string name="title_listing">Listing</string>
+    <string name="title_services">Services</string>
+    <string name="title_karwaty">Karwaty</string>
+    <string name="title_profile">Profile</string>
+    <string name="txt_language">Language</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="txt_ok">OK</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_accept">Accept</string>
+    <string name="txt_accepted_by">Accepted by:</string>
+    <string name="txt_reject">Reject</string>
+    <string name="txt_close_screen">Close Screen</string>
+    <string name="txt_cancel_screen">Cancel Screen</string>
+    <string name="msg_forgot_password">Forgot Password</string>
+    <string name="txt_choose_photos">Choose Photo</string>
+
+
+    <!--Http error code-->
+    <string name="http_error_400">Bad Request</string>
+    <string name="http_error_401">Unauthorized</string>
+    <string name="http_error_404">Url not found\nPlease check your internet connection</string>
+    <string name="http_error_408">Request timeout</string>
+    <string name="http_error_409">Request timeout</string>
+    <string name="http_error_413">Request entity to large </string>
+
+    <string name="http_error_500">Internal server error</string>
+    <string name="http_error_502">Bad gateway</string>
+    <string name="http_error_503">Service unavailable</string>
+    <string name="http_error_504">Gateway timeout</string>
+
+    <!--Push Message-->
+    <string name="push_message_2091">Login at other device.</string>
+
+    <string name="txt_arabic">Arabic</string>
+    <string name="txt_collen" translatable="false"> : </string>
+    <string name="txt_empty_price" translatable="false">- -</string>
+    <string name="txt_empty_string" translatable="false">--</string>
+    <string name="txt_percentage" translatable="false">%</string>
+    <string name="txt_language_arabic" translatable="false">Arabic</string>
+    <string name="txt_language_english" translatable="false">English</string>
+    <string name="txt_language_arabic_code" translatable="false">ar</string>
+    <string name="txt_language_english_code" translatable="false">en</string>
+
+    <!--this string is used for developer-->
+    <string name="transition_string_supplier_image" translatable="false">TransitionImage</string>
+    <string name="transition_string_product" translatable="false">TransitionProduct</string>
+
+
+    <!--Gender-->
+    <string name="txt_male">Male</string>
+    <string name="txt_female">Female</string>
+    <string name="txt_gender">Select Gender</string>
+
+    <string name="txt_later">Later</string>
+    <string name="txt_exit">Exit</string>
+
+    <string name="txt_update">Update</string>
+    <string name="txt_update_app">Update App</string>
+    <string name="app_version" translatable="false">App Version:</string>
+    <string name="txt_login">Login</string>
+    <string name="Welcome">Welcome</string>
+    <string name="txt_signup">SignUp</string>
+    <string name="txt_admin_mobile">Admin Mobile</string>
+    <string name="txt_publish_mobile_no">Publish Number</string>
+    <string name="txt_mobile_no">Mobile No</string>
+    <string name="txt_email_or_phone">Email or Mobile No</string>
+    <string name="txt_forgot_password">Forgot Password</string>
+    <string name="txt_skip"> Skip >> </string>
+    <string name="txt_skip_login">Skip Login >></string>
+    <string name="txt_password">Password</string>
+    <string name="txt_new_user">New User?</string>
+    <string name="txt_reset">Reset</string>
+    <string name="txt_password_reset">Password Reset</string>
+    <string name="txt_reset_desc">Enter the phone number associated with your account</string>
+
+    <string name="txt_enter_new_password">Enter new password</string>
+    <string name="txt_confirm_password">Confirm password</string>
+    <string name="txt_submit">Submit</string>
+    <string name="txt_otp">Otp</string>
+    <string name="txt_something_wrong">Something wrong</string>
+    <string name="txt_new">New</string>
+    <string name="txt_active">Active</string>
+    <string name="txt_terminated">Terminated</string>
+    <string name="txt_job_progress">Job In Progress</string>
+    <string name="txt_history">History</string>
+    <string name="txt_pending">Pending</string>
+    <string name="txt_progress">Progress</string>
+
+    <string name="txt_accept_terms_and_condition"><![CDATA[Accept terms & condition]]></string>
+    <string name="txt_name">Name</string>
+    <string name="txt_company_name">Company Name</string>
+    <string name="txt_title">Title</string>
+    <string name="txt_register">Register</string>
+
+
+    <!--  message text   -->
+    <string name="msg_you_reached_maximum">You have reached maximum limit.</string>
+    <string name="msg_max_image">You have reached maximum image/video limit.</string>
+    <string name="msg_select_country">Please select country</string>
+    <string name="msg_select_city">Please select city</string>
+    <string name="msg_enter_title">Please enter the title</string>
+    <string name="msg_enter_desc">Please enter the description</string>
+    <string name="msg_enter_enclude">Please enter the include</string>
+    <string name="msg_enter_quantity">Please enter the quantity</string>
+    <string name="msg_enter_deposit_amt">Please enter the deposit amount</string>
+    <string name="msg_enter_sale_price">Please enter the sale price</string>
+    <string name="msg_enter_salary">Please enter the salary</string>
+    <string name="msg_enter_product_Dimension">Please enter the product dimensions.</string>
+    <string name="msg_upload_image_video">Please upload image/video.</string>
+    <string name="msg_select_attached">Please select attached.</string>
+    <string name="msg_enter">Please enter the</string>
+    <string name="msg_enter_required">"*Please enter "</string>
+    <string name="msg_select_required">"*Please select "</string>
+    <string name="msg_select_company_name">Please select company name</string>
+    <string name="msg_select_company_website">Please select company website</string>
+
+
+    <string name="msg_please_select_t_and_c">Please select terms &amp; conditions.</string>
+    <string name="msg_please_enter_otp">Please enter the otp.</string>
+    <string name="msg_please_enter_confirm_password">Please enter confirm password</string>
+    <string name="msg_please_enter_valid_password">Please enter a valid password(Minimum 8 characters with at least 1 special character)</string>
+    <string name="msg_please_select_country_code">Please select the country code</string>
+    <string name="msg_please_enter_mobile_number">Please enter the mobile number</string>
+    <string name="msg_please_enter_password">Please enter the password</string>
+    <string name="msg_please_enter_valid_mobile_number">Please enter valid mobile number</string>
+    <string name="msg_please_enter_valid_phone_no">Please enter valid phone number</string>
+    <string name="msg_please_enter_email_or_phone">Please enter email or phone no.</string>
+    <string name="msg_please_enter_valid_email_or_phone">Please enter valid email or phone no.</string>
+    <string name="msg_please_enter_email">Please enter email.</string>
+    <string name="msg_please_enter_valid_email">Please enter valid email.</string>
+    <string name="msg_please_enter_name">Please enter name</string>
+    <string name="msg_please_enter_valid_name">Please enter valid name(Minimum 4 character)</string>
+    <string name="msg_new_app_update_available">App update available with functionality and performance improvement.</string>
+    <string name="msg_create_post_cancel">Your progress will be lost, Are you sure want to cancel.</string>
+    <string name="msg_create_post_login">You have to login for create a post. Are you want to login.</string>
+    <string name="msg_create_post_delete_save_data">You have a previous save post! Do you want to continue?</string>
+    <string name="msg_post_created">Your post successfully created.</string>
+    <string name="msg_app_maintenance">Karwaty app is under maintenance for some time to update new feature, will be available soon.</string>
+
+
+    <string name="msg_select_from_value_first">Please enter the from value first</string>
+    <string name="msg_enter_min_max_value">Please enter the min and max value</string>
+    <string name="msg_select_min_value_first">Please enter the minimum value first</string>
+    <string name="msg_maximum_value">The value should be less than @.</string>
+    <string name="msg_invalid_range">The value should be between @ and #.</string>
+    <string name="msg_invalid_offer_range">The offer amount should be between @ and #.</string>
+    <string name="msg_verify_phone">To enable these feature you have to verify the phone no. Do you want to continue?</string>
+
+
+    <string name="txt_already_member">I am already a member</string>
+    <string name="txt_login_to_continue">Login to continue</string>
+    <string name="txt_individual">Individual</string>
+    <string name="txt_company">Company</string>
+    <string name="txt_register_company">Register a company</string>
+    <string name="cont_desc_icon">button icon</string>
+    <string name="cont_desc_image_button">image button</string>
+    <string name="cont_desc_image">profile image</string>
+    <string name="txt_default_number">0</string>
+    <string name="txt_resend_otp">Resend Otp</string>
+    <string name="txt_click_here">Click here</string>
+    <string name="txt_camera">Camera</string>
+    <string name="txt_gallery">Gallery</string>
+    <string name="error_get_image">Unable to get image. Please try again.</string>
+    <string name="error_capture_image">Unable to capture image. Please try again</string>
+    <string name="msg_please_select_profile">Please select profile image</string>
+    <string name="txt_send_confirmation_code_to">We send a 4 digit confirmation code to</string>
+
+    <string name="txt_select_language">Select language</string>
+    <string name="txt_select">Select</string>
+    <string name="txt_browse_file">Browse file</string>
+    <string name="txt_national_id">National or Iqama ID</string>
+    <string name="txt_id_expiry_date">ID Expiry Date</string>
+    <string name="txt_twitter">Twitter</string>
+    <string name="txt_instagram">Instagram</string>
+    <string name="txt_facebook">Facebook</string>
+    <string name="txt_snapchat">Snapchat</string>
+    <string name="txt_select_location">Select Location</string>
+    <string name="txt_address">Address</string>
+    <string name="txt_distance">Distance</string>
+    <string name="txt_km" translatable="false">KM</string>
+    <string name="txt_national_add">National Address</string>
+    <string name="txt_national_add_info">National Address information</string>
+    <string name="txt_special_need">Special need</string>
+    <string name="txt_qualification">Qualification</string>
+    <string name="txt_income">Income</string>
+    <string name="txt_marital_status">Marital status</string>
+    <string name="txt_select_city">Select City</string>
+    <string name="txt_select_country">Select Country</string>
+    <string name="txt_city">City</string>
+    <string name="txt_country">Country</string>
+
+
+    <string name="txt_payment">Payment</string>
+    <string name="txt_update_profile">Update profile</string>
+    <string name="txt_message">Message</string>
+    <string name="txt_calendar">Calendar</string>
+    <string name="txt_statistics">Statistics</string>
+    <string name="txt_settings">Settings</string>
+    <string name="txt_manage_employee">Manage Employee</string>
+    <string name="txt_manage_company">Manage Company</string>
+    <string name="txt_my_address">My Address</string>
+    <string name="txt_faq">FAQ\'s</string>
+    <string name="txt_help_support"><![CDATA[Help & Support]]></string>
+    <string name="txt_logout">Logout</string>
+
+
+    <string name="txt_occupation">Select Occupation</string>
+    <!--    <string name="txt_marital_status">Select Marital Status</string>-->
+    <string name="txt_special_needs">Select Special Needs</string>
+
+
+    <string name="txt_d_o_b">Date of Birth</string>
+    <string name="txt_email_alternate">Email Alternate</string>
+    <string name="txt_email">Email</string>
+
+    <string name="txt_user_name">Username</string>
+    <string name="txt_first_name">First Name</string>
+    <string name="txt_last_name">Last Name</string>
+
+
+    <!--Marital Status -->
+    <string name="txt_single">Single</string>
+    <string name="txt_married">Married</string>
+    <string name="txt_divorced">Divorced</string>
+    <string name="txt_widowed">Widowed</string>
+
+    <!--Marital Status -->
+    <string name="txt_primary" translatable="false">Primary</string>
+    <string name="txt_secondary" translatable="false">Secondary</string>
+    <string name="txt_diploma" translatable="false">Diploma</string>
+    <string name="txt_bachelor" translatable="false">Bachelor</string>
+    <string name="txt_master" translatable="false">Master</string>
+    <string name="txt_phd" translatable="false">Phd</string>
+
+    <!--Income range -->
+    <string name="txt_500_1000" translatable="false">500 - 1000</string>
+    <string name="txt_1000_5000" translatable="false">1000 - 5000</string>
+    <string name="txt_5000_10000" translatable="false">5000 - 10000</string>
+    <string name="txt_10000_20000" translatable="false">10000 - 20000</string>
+    <string name="txt_20000_50000" translatable="false">20000 - 50000</string>
+    <string name="txt_500000_1000000" translatable="false">500000 - 1000000</string>
+    <string name="txt_1000000_more" translatable="false">1000000 and more</string>
+
+
+    <!--Occupation-->
+    <string name="txt_high_student" translatable="false">High school Student</string>
+    <string name="txt_university" translatable="false">University Student</string>
+    <string name="txt_engineer" translatable="false">Engineer</string>
+    <string name="txt_doctors" translatable="false">Doctors</string>
+    <string name="txt_nurse" translatable="false">Nurse</string>
+    <string name="txt_teacher" translatable="false">Teacher</string>
+    <string name="txt_teacher_assistant" translatable="false">Teacher assistant</string>
+    <string name="txt_driver" translatable="false">Driver</string>
+    <string name="txt_executives" translatable="false">Executives</string>
+    <string name="txt_managers" translatable="false">Managers</string>
+    <string name="txt_secretaries" translatable="false">Secretaries</string>
+    <string name="txt_IT" translatable="false">IT</string>
+    <string name="txt_police" translatable="false">Police</string>
+    <string name="txt_military" translatable="false">Military</string>
+    <string name="txt_security_guard" translatable="false">Security Guard</string>
+    <string name="txt_waiter" translatable="false">Waiter</string>
+    <string name="txt_cashier" translatable="false">Cashier</string>
+    <string name="txt_sales" translatable="false">Sales</string>
+    <string name="txt_marketing" translatable="false">Marketing</string>
+    <string name="txt_designers" translatable="false">Designers</string>
+    <string name="txt_machine_operator" translatable="false">Machine operator</string>
+    <string name="txt_mechanics" translatable="false">Mechanics</string>
+    <string name="txt_housekeeping" translatable="false">Housekeeping</string>
+    <string name="txt_student" translatable="false">Student</string>
+    <string name="txt_storekeeper" translatable="false">Storekeeper</string>
+    <string name="txt_technicians" translatable="false">Technicians</string>
+    <string name="txt_electricians" translatable="false">Electricians</string>
+    <string name="txt_plumber" translatable="false">Plumber</string>
+    <string name="txt_factory_worker" translatable="false">Factory worker</string>
+    <string name="txt_farmer" translatable="false">Farmer</string>
+    <string name="txt_fireman" translatable="false">Fireman</string>
+    <string name="txt_pilot" translatable="false">Pilot</string>
+    <string name="txt_sailor" translatable="false">Sailor</string>
+    <string name="txt_steward" translatable="false">Steward</string>
+    <string name="txt_hostess" translatable="false">Hostess</string>
+    <string name="txt_journalist" translatable="false">Journalist</string>
+    <string name="txt_cameraman" translatable="false">Camera man</string>
+    <string name="txt_photographer" translatable="false">Photographer</string>
+    <string name="txt_unemployed" translatable="false">Un-employed</string>
+    <string name="txt_other" translatable="false">Other</string>
+    <string name="txt_attention">Attention</string>
+    <string name="txt_create_post">Create Post</string>
+    <string name="txt_search">Search</string>
+    <string name="txt_sub_category">Sub Category</string>
+    <string name="txt_category">Category</string>
+    <string name="txt_main_category">MainCategory</string>
+    <string name="txt_filter">Filter</string>
+    <string name="txt_countinue">Continue</string>
+    <string name="txt_discard">Discard</string>
+    <string name="txt_continue_previous_post">Continue a previous post</string>
+    <string name="txt_from">From</string>
+    <string name="txt_to">To</string>
+    <string name="txt_next">Next</string>
+    <string name="txt_back">Back</string>
+    <string name="txt_product_details">Product Deatails</string>
+
+    <!--       product details-->
+    <string name="txt_include">Include</string>
+    <string name="txt_description">Description</string>
+    <string name="txt_product_title_eng">Product title in English</string>
+    <string name="txt_product_desc_eng">Product description in English</string>
+    <string name="txt_item_eng">Item in English</string>
+    <string name="txt_product_desc_ar">Product description in Arabic</string>
+    <string name="txt_product_title_ar">Product title in Arabic</string>
+    <string name="txt_item_ar">Item in Arabic</string>
+
+    <string name="txt_product_dimension">Product Dimension</string>
+    <string name="txt_length">Length</string>
+    <string name="txt_width">Width</string>
+    <string name="txt_weight">Weight</string>
+    <string name="txt_height">Height</string>
+    <string name="txt_quantity">"Quantity: "</string>
+    <string name="txt_total_quantity">Total Quantity</string>
+    <string name="txt_upload">Upload</string>
+    <string name="txt_deposit">Deposit</string>
+    <string name="txt_deposit_amt">Deposit Amount</string>
+    <string name="txt_total_payable_amt">Total Payable Amount</string>
+    <string name="txt_available_qnt">Available quantity</string>
+    <string name="txt_pcs">pcs</string>
+    <string name="txt_publish_on">Publish on</string>
+    <string name="txt_salary">Salary</string>
+    <string name="txt_insurance_cost">Insurance Cost</string>
+
+    <string name="txt_please_select_country_and_city">Please select country and city</string>
+
+    <string name="describe_your_product_in_english">Describe your product in English</string>
+    <string name="describe_your_product_in_arabic">Describe your product in Arabic</string>
+    <string name="txt_upload_images_videos"><![CDATA[Upload Images & videos]]></string>
+    <string name="txt_upload_images_video">Upload Images/Video</string>
+    <string name="item_in_english">Item in English</string>
+    <string name="item_in_arabic">Item in Arabic</string>
+
+    <string name="txt_video">Video</string>
+    <string name="txt_image">Image</string>
+    <string name="txt_image_from_gallery">Image from gallery</string>
+    <string name="txt_video_from_gallery">Video from gallery</string>
+    <string name="txt_image_from_camera">Image from camera</string>
+    <string name="txt_video_from_camera">Video from camera</string>
+
+
+    <string name="txt_pricing_policy_methods">Pricing Policy Methods</string>
+    <string name="txt_allow_request_from_customer">Allow Request from Customer</string>
+    <string name="txt_negotiable_price">Negotiable Price</string>
+    <string name="txt_complimentary">Complimentary</string>
+    <string name="txt_negotiable">Negotiable</string>
+    <string name="txt_fixed_price">Fixed Price</string>
+    <string name="txt_best_price">Best Price</string>
+    <string name="txt_sale_price">Sale Price</string>
+    <string name="txt_price">Price</string>
+    <string name="txt_free_of_charge">Free of Charge</string>
+    <string name="txt_insert_price">Insert Price</string>
+    <string name="txt_i_will_charge_delivery_fees">I will charge Delivery Fees</string>
+    <string name="txt_product_location">Product Location</string>
+    <string name="txt_customer_to_pickup">Customer to Pickup</string>
+    <string name="txt_owner_will_deliver">Owner will Deliver</string>
+    <string name="txt_third_part_delivery">Third Party delivery.</string>
+    <string name="txt_customer_will_delivered_and_return">Customer to pickup &amp; return.</string>
+    <string name="txt_owner_will_delivered_and_return">Owner will delivered and returns.</string>
+
+
+    <!--    <string name="txt_please_select_its_required">"Please select 0, It is required"</string>-->
+    <string name="txt_required">" is required."</string>
+    <string name="txt_please_select">"Please select 0."</string>
+    <string name="txt_from_date">From Date</string>
+    <string name="txt_post_appearance">Post Appearance</string>
+    <string name="txt_days">Days</string>
+    <string name="txt_period">Period</string>
+    <string name="txt_max_period">Max Period</string>
+    <string name="txt_min_period">Min Period</string>
+    <string name="txt_minimum_amp_maximum_rent_period"><![CDATA[Minimun & maximum rent period]]></string>
+    <string name="txt_remarks">Remarks</string>
+    <string name="txt_remarks_eng">Remarks in english</string>
+    <string name="txt_remarks_ar">Remarks in arabic</string>
+
+    <string name="txt_multiple_price">Multiple Price</string>
+    <string name="txt_third_party_pickup_amp_return"><![CDATA[Thired party pickup & return]]></string>
+    <string name="txt_delivery_companies">Delivery companies</string>
+
+    <string name="txt_meeting_point_hubs">Meeting point hubs</string>
+    <string name="txt_karwaty_meeting_point_hubs">Karwaty meeting point hubs</string>
+
+    <string name="txt_per_day">Per day</string>
+    <string name="txt_per_week">Per week</string>
+    <string name="txt_per_month">Per month</string>
+    <string name="txt_per_year">Per year</string>
+    <string name="txt_per_task">Per task</string>
+    <string name="txt_per_item">Per item</string>
+
+    <string name="txt_delivery_price">Delivery price</string>
+    <string name="txt_delivery_details">Delivery Details</string>
+    <string name="txt_delivery_remarks">Delivery Remarks</string>
+    <string name="txt_owner_will_deliver_and_return"><![CDATA[Owner will deliver & return]]></string>
+    <string name="txt_choose_your_delivery_method">Choose your delivery method</string>
+
+    <string name="txt_select_option">Select option</string>
+    <string name="txt_add_contact">Add Contact</string>
+    <string name="txt_add">Add+</string>
+    <string name="txt_product_current_value">Product current value</string>
+    <string name="txt_customer_to_pickup_return">Customer to pickup and return</string>
+
+    <string name="txt_post_max_appearance">Post max appearance for customer:</string>
+    <string name="txt_when_post_appear">When do you need to start your post?</string>
+
+    <string name="txt_post_appearance_appearance_for_customer">Post appearance for customer</string>
+    <string name="txt_select_your_post_appearance_preference">Select your post appearance preference</string>
+
+    <string name="txt_add_contact_desc">In order for to server you better and faster, Kindly add your mobile number</string>
+    <string name="txt_remarks_in_arabic">Remarks in arabic</string>
+    <string name="txt_remarks_in_english">Remarks in english</string>
+
+
+    <string name="msg_permission_location">"If you reject permission,you can not use this service\nPlease turn on permissions at [Setting] > [Permission]"</string>
+    <string name="msg_select_any_privacy_policy">Please select any of privacy policy</string>
+    <string name="msg_select_Address">Please Select Address</string>
+    <string name="msg_current_value">Please Enter Current Value</string>
+    <string name="msg_insurance_value">Please Enter Insurance Value</string>
+    <string name="msg_deposit_value">Please Enter Deposit Value</string>
+    <string name="msg_sales_price">Please Enter Sales Price</string>
+    <string name="msg_per_day_amount">Please Enter Per day Amount</string>
+    <string name="msg_per_week_amount">Please Enter Per week Amount</string>
+    <string name="msg_per_month_amount">Please Enter Per month Amount</string>
+    <string name="msg_per_year_amount">Please Enter Per year Amount</string>
+    <string name="msg_per_task_amount">Please Enter Per task Amount</string>
+    <string name="msg_delivery_amount">Please Enter Delivery Amount</string>
+    <string name="msg_delivery_company">Please Enter Delivery Company</string>
+    <string name="msg_delivery_hub">Please Enter Hub</string>
+    <string name="msg_remark">Please Enter Remarks</string>
+    <string name="msg_min_period">Please Enter Minimum Period</string>
+    <string name="msg_max_period">Please Enter Maximum Period</string>
+    <!--    <string name="msg_max_period">Maximum period is not less that minimum period.</string>-->
+    <string name="txt_contact">Contacts</string>
+    <string name="txt_select_available_service_and_it_s_cost">Select available services and it\'s cost</string>
+    <string name="txt_call">Call</string>
+    <string name="txt_phone_call">Phone Call</string>
+    <string name="txt_whatsup">WhatsUp</string>
+    <string name="txt_hubs">Hubs</string>
+    <string name="txt_services_not_available_this_location">Select a location inside 0 city.</string>
+    <string name="txt_save">Save</string>
+
+
+    <string name="msg_submit_posting">Are you sure you want to publish your posting?</string>
+    <string name="msg_save_posting">Are you sure you want to save your posting?</string>
+    <string name="msg_create_request">Are you sure you want to create a request?</string>
+    <string name="msg_cancel_created_request">Are you sure you want to cancel the request?</string>
+    <string name="msg_accept_created_request">Are you sure you want to Accept the request?</string>
+    <string name="msg_request_submitted">Your request have been submitted successfully</string>
+    <string name="add_contacts">+ Add Contacts</string>
+    <string name="txt_attached_file">Attached a file</string>
+    <string name="txt_yes">Yes</string>
+    <string name="txt_no">No</string>
+    <string name="msg_gps_no_gps">Your GPS seems to be disabled, do you want to enable it?)</string>
+    <string name="msg_no_data_found">No Data Found..</string>
+
+
+    <string name="msg_reason_for_camera_permission">Without this permission app will be unable
+    to access camera and your external storage. Are sure you want to deny this permission?</string>
+    <string name="txt_i_am_sure">I\'M SURE</string>
+    <string name="txt_retry">RETRY</string>
+    <string name="txt_user_allow_chat">User allow to chat</string>
+    <string name="txt_agree_to_publish_location">Is allow to publish location</string>
+    <string name="txt_enable_gps">Enable GPS</string>
+    <string name="txt_required_for_this_app">Required for this app</string>
+    <string name="txt_enable_now">Enable Now</string>
+    <string name="txt_current_location">Current Location</string>
+    <string name="txt_location_permission_not_granted">Location Permission not granted</string>
+    <string name="txt_add_employee">Add Employee</string>
+
+
+    <string name="txt_aboutus">About us</string>
+    <string name="txt_slogan">Slogan</string>
+    <string name="txt_website">Website</string>
+    <string name="txt_id_number">ID Number</string>
+    <string name="txt_commercial_reg_number">CR Number</string>
+    <string name="txt_commercial_reg">Commercial Registration(CR)</string>
+    <string name="txt_vat_registration">VAT Registration</string>
+    <string name="txt_vat">VAT</string>
+    <string name="txt_vat_number">VAT Number</string>
+    <string name="txt_expiry_date">Expiry date</string>
+    <string name="txt_cr_expiry_date">CR Expiry Date</string>
+    <string name="txt_register_your_business">Register Your Business</string>
+
+    <string name="title_become_company">Become a company</string>
+    <string name="title_select_business">Select your business</string>
+    <string name="title_select_service">Select your service</string>
+    <string name="title_select_company">Select the company</string>
+    <!--    <string name="title_select_business">Select your business</string>-->
+
+    <string name="title_select_services_category">Select service categories</string>
+    <string name="txt_famous_for">Famous for</string>
+    <string name="msg_select_category">Please select at least one service category.</string>
+
+    <string name="msg_select_vat_image">Please select the vat file.</string>
+    <string name="msg_select_vat_no">Please select the vat registration number.</string>
+
+    <string name="msg_select_cr_image">Please select the Commercial Registration(CR) file.</string>
+    <string name="msg_select_cr_no">Please select the Commercial Registration(CR) number.</string>
+
+    <string name="msg_select_id_image">Please select the national id.</string>
+    <string name="msg_select_id_no">Please select the national id number.</string>
+
+
+    <string name="msg_select_id_expiry">Please select the National Id expiry date.</string>
+    <string name="msg_select_cr_expiry">Please select the Commercial Registration(CR) expiry date.</string>
+    <string name="msg_please_enter_valid_whatsup_no">Please enter valid what\'s up phone number.</string>
+    <string name="msg_please_enter_valid_publish_phone_no">Please enter valid publish phone number.</string>
+
+    <string name="txt_join_company">Join a company</string>
+    <string name="msg_join_company_success">Your request has been sent to the company, Please wait until approved.</string>
+    <string name="txt_no_data_found">No data found</string>
+    <string name="txt_profession">Profession:</string>
+    <string name="txt_posts">Posts</string>
+    <string name="msg_service_not_available_in_selected_country">Currently, we  don\'t operate in your country</string>
+    <string name="txt_go_default_country">Use default country</string>
+    <string name="msg_oops">Oop\'s!</string>
+    <string name="txt_no_item">No data found</string>
+    <string name="txt_select_date_range">Select a date range</string>
+    <string name="txt_start_date">Start Date</string>
+    <string name="txt_end_date">End date</string>
+    <string name="msg_start_date_first">Please select start date first.</string>
+    <string name="msg_select_valid_date_range">Please select the valid date range</string>
+    <string name="txt_order_specific_product">Order specific product</string>
+    <string name="txt_order_specific_supplier">Order from specific supplier</string>
+    <string name="txt_quote_from_supplier">Get quote from supplier within a city</string>
+    <string name="txt_select_residence">Select residence</string>
+    <string name="txt_provided_by">Provided by:</string>
+    <string name="txt_coming_soon">(Coming soon)</string>
+    <string name="txt_review">Reviews</string>
+    <string name="txt_since">Since</string>
+    <string name="txt_member_since">Member since</string>
+    <string name="msg_residence_discount">*Select residence to get discount</string>
+    <string name="txt_place_order">Place Order</string>
+    <string name="txt_chat">Chat</string>
+    <string name="msg_place_order">-Place order: Booking without any concerning the cost with the supplier.</string>
+    <string name="msg_create_offer">-Create offer: Send your reasonable offer.</string>
+    <string name="txt_create_offer">Create offer</string>
+    <string name="txt_about_product">About the product</string>
+    <string name="txt_view_more">View more</string>
+    <string name="txt_view_less">View less</string>
+    <string name="txt_add_favourite">Add to Favourite</string>
+    <string name="txt_add_to_wishlist">Add to wishlist</string>
+    <string name="txt_manage_post">Manage post</string>
+    <string name="txt_view_offer">View Offer</string>
+    <string name="txt_create_best_price">Create best price</string>
+
+    <string name="txt_accepted_payment_methods">Accepted payment methods.</string>
+    <string name="txt_select_one_delivery_option">Please select the one of delivery option.</string>
+    <string name="txt_apply">Apply</string>
+    <string name="txt_coupon">Coupon</string>
+    <string name="msg_invoice_refund_policy">Note: The refundable deposit amount will be added to the total amount until an agrement has benn reached with the supplier to waive it all or a part of it.</string>
+    <string name="txt_request_expire">If no response, your request will expired on</string>
+    <string name="msg_select_quantity">Please select product quantity</string>
+    <string name="txt_no_of_days">No of days</string>
+    <string name="msg_select_delivery_type">Please select the delivery type.</string>
+    <string name="txt_item_price">Item price</string>
+    <string name="txt_receive_orders">Receive Orders</string>
+    <string name="txt_my_posts">My Posts</string>
+    <string name="txt_my_orders">My Orders</string>
+    <string name="txt_receive">Receive</string>
+    <string name="txt_order_no">Order No</string>
+    <string name="txt_completed">Completed</string>
+
+    <!--  order Delivery Status  -->
+    <string name="txt_status">Status</string>
+    <string name="status_pending">Pending</string>
+    <string name="status_progress">Progress</string>
+    <string name="status_rejected">Rejected</string>
+    <string name="status_cancelled">Cancelled</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_waiting_for_payment">Waiting for payment</string>
+    <string name="status_payment_completed">Payment completed</string>
+    <string name="status_start_delivery_to_customer">Start delivery to customer</string>
+    <string name="status_delivery_started">Delivery Started</string>
+    <string name="status_order_delivered">Order delivered</string>
+    <string name="status_customer_received">Customer received</string>
+    <string name="status_start_job">Start job</string>
+    <string name="status_job_started">job Started</string>
+    <string name="status_start_return_from_customer">Start return from customer</string>
+    <string name="status_return_started">Return Started</string>
+    <string name="status_supplier_received">Supplier received</string>
+    <string name="status_customer_waiting_for_your_approval">Customer waiting for your approval</string>
+    <string name="status_waiting_for_approval">Waiting for supplier approval</string>
+    <string name="status_waiting_for_customer_payment">Waiting for customer payment</string>
+    <string name="status_supplier_approved_your_order">Supplier approved your order</string>
+    <string name="status_customer_waiting_start_job">"Customer waiting to start a job "</string>
+    <string name="status_customer_paid">Customer paid</string>
+    <string name="status_payment_completed_waiting_start_job"><![CDATA["Payment done & waiting for job to start "]]></string>
+
+
+    <string name="msg_deposit_message">Deposit will be paid in pull as define unless you agree to make change.</string>
+    <string name="txt_edit_order">Edit Order</string>
+    <string name="txt_order_details">Order Details</string>
+    <string name="txt_agree_to_waive">Agree to waive</string>
+    <string name="txt_total_discount">Total discount</string>
+    <string name="txt_offer_price">Offer price</string>
+    <string name="msg_please_waived_percentage">Please select the waived percentage</string>
+    <string name="msg_please_select_card">Please select the payment card type</string>
+    <string name="txt_pay_and_place_order"><![CDATA[Pay & Place order]]></string>
+    <string name="txt_complete_order">Complete order</string>
+    <string name="txt_start_job">Start Job</string>
+    <string name="status_you_rejected">You rejected customer request</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+    <!--  status -->
+
+
+</resources>
