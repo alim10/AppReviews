@@ -23,3 +23,4 @@ rootProject.name = "AppReviews"
 include(":app")
 //include(":common")
 include(":core")
+include(":auth")

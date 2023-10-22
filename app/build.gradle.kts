@@ -2,6 +2,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+//    kotlin("kapt")
 }
 
 android {
@@ -20,15 +21,32 @@ android {
             useSupportLibrary = true
         }
     }
+    buildFeatures {
+        buildConfig  = true
+    }
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            buildConfigField("String", "IMAGE_URL", "\"https://app.karwaty.com/\"")
+            buildConfigField("String", "BASE_URL", "\"https://app.karwaty.com/\"")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
         }
+
+        debug {
+            isMinifyEnabled = false
+            isDebuggable = true
+            buildConfigField("String", "BASE_URL", "\"https://app.karwaty.com/\"")
+            buildConfigField("String", "IMAGE_URL", "\"https://app.karwaty.com/\"")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -39,10 +57,9 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
-//    buildFeatures {
-//        buildTypes = true
-//    }
+
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
     }
@@ -63,6 +80,9 @@ dependencies {
     implementation(libs.ui.graphics)
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
+//    implementation(libs.androidx.compose.material)
+//    implementation(libs.composeMaterial3)
+    implementation(libs.androidx.material3)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -71,7 +91,34 @@ dependencies {
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
 
-//    implementation(project(":common"))
+    implementation(libs.insets)
 
-//    implementation(project(":common"))
+    implementation(libs.coil)
+    implementation(libs.coilCompose)
+    implementation(libs.constraintLayout)
+
+    /*  Dependency Injection  Hilt and others */
+//    implementation(libs.hiltCompose)
+    implementation(libs.hilt)
+    annotationProcessor (libs.hiltCompiler)
+
+
+    implementation(libs.gson)
+    implementation(libs.googleMap)
+    implementation(libs.googleLocation)
+    implementation(libs.firebaseMessage)
+    implementation(libs.firebaseAnalytics)
+    implementation(libs.firebaseCrashlytics)
+
+
+    implementation(libs.gsonConverter)
+    implementation(libs.retrofit)
+    implementation(libs.retrofitConvertorScalor)
+    implementation(libs.okhttp)
+    implementation(libs.loggingInterceptor)
+
+
+//    implementation(libs.bundles.networDependecy)
+    implementation(project(":core"))
+    implementation(project(":auth"))
 }

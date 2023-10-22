@@ -3,7 +3,7 @@ name: Android Reviews App
 on:
   push:
     branches: [ test ]
-  push_request:
+  push-request:
     branches: [ test ]
 
   workflow_dispatch:
