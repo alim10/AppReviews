@@ -1,8 +1,12 @@
 @Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
-    alias(libs.plugins.androidApplication)
-    alias(libs.plugins.kotlinAndroid)
-//    kotlin("kapt")
+    alias(libs.plugins.com.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.dagger.hilt)
+    alias(libs.plugins.googlePlayServices)
+    alias(libs.plugins.firebaseCrashlytics)
+
 }
 
 android {
@@ -49,11 +53,11 @@ android {
 
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
@@ -80,9 +84,6 @@ dependencies {
     implementation(libs.ui.graphics)
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
-//    implementation(libs.androidx.compose.material)
-//    implementation(libs.composeMaterial3)
-    implementation(libs.androidx.material3)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -91,25 +92,12 @@ dependencies {
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
 
-    implementation(libs.insets)
-
-    implementation(libs.coil)
-    implementation(libs.coilCompose)
-    implementation(libs.constraintLayout)
-
-    /*  Dependency Injection  Hilt and others */
-//    implementation(libs.hiltCompose)
-    implementation(libs.hilt)
-    annotationProcessor (libs.hiltCompiler)
-
-
-    implementation(libs.gson)
-    implementation(libs.googleMap)
-    implementation(libs.googleLocation)
-    implementation(libs.firebaseMessage)
+    implementation(platform(libs.firebaseBom))
     implementation(libs.firebaseAnalytics)
-    implementation(libs.firebaseCrashlytics)
-
+    implementation(libs.viewModel)
+    implementation(libs.viewModelRuntime)
+    implementation(libs.composeViewModel)
+    implementation(libs.composeViewModelRuntime)
 
     implementation(libs.gsonConverter)
     implementation(libs.retrofit)
@@ -117,8 +105,9 @@ dependencies {
     implementation(libs.okhttp)
     implementation(libs.loggingInterceptor)
 
+    implementation(libs.hilt)
+    kapt(libs.hiltCompiler)
 
-//    implementation(libs.bundles.networDependecy)
     implementation(project(":core"))
     implementation(project(":auth"))
 }

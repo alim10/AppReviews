@@ -12,16 +12,13 @@ import com.example.appreviews.core.helper.NetworkReceiver
 import com.example.appreviews.core.utils.AppLogs
 import com.example.appreviews.core.utils.Const
 import com.example.appreviews.core.utils.FontsOverride
-import com.google.android.gms.tasks.OnCompleteListener
 import java.text.SimpleDateFormat
 import java.util.*
 import javax.inject.Inject
-import com.google.firebase.messaging.FirebaseMessaging
 
 abstract class BaseActivity : AppCompatActivity() {
 
     private var networkReceiver: NetworkReceiver? = null
-    /*  date format   */
     lateinit var webFormat: SimpleDateFormat
 
     @Inject
@@ -62,30 +59,25 @@ abstract class BaseActivity : AppCompatActivity() {
 
     /** getting FCM device token */
     private fun getFcmDeviceToken() {
-        FirebaseMessaging.getInstance().token
-            .addOnCompleteListener(
-                OnCompleteListener { task ->
-                    if (!task.isSuccessful) {
-                        AppLogs.log(
-                            Const.Tags.BASE_ACTIVITY,
-                            "FCM registration token failed >> " + task.exception.toString()
-                        )
-                        return@OnCompleteListener
-                    }
-                    val deviceToken = task.result
-                    AppLogs.log(Const.Tags.BASE_ACTIVITY, "Device Token >> $deviceToken")
-                    preference.putDeviceToken(deviceToken)
-                }
-            )
+//        FirebaseMessaging.getInstance().token
+//            .addOnCompleteListener(
+//                OnCompleteListener { task ->
+//                    if (!task.isSuccessful) {
+//                        AppLogs.log(
+//                            Const.Tags.BASE_ACTIVITY,
+//                            "FCM registration token failed >> " + task.exception.toString()
+//                        )
+//                        return@OnCompleteListener
+//                    }
+//                    val deviceToken = task.result
+//                    AppLogs.log(Const.Tags.BASE_ACTIVITY, "Device Token >> $deviceToken")
+//                    preference.putDeviceToken(deviceToken)
+//                }
+//            )
     }
 
     fun isUserLogin(): Boolean {
         return !TextUtils.isEmpty(preference.userId)
     }
-
-
-
-
-
 
 }
