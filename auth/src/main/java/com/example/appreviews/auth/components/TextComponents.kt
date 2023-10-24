@@ -11,7 +11,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.appreviews.auth.ui.theme.*
+import com.example.appreviews.core.theme.*
 
 @Composable
 fun CustomText(value: String) {
@@ -35,7 +35,7 @@ fun CustomTextTitle(value: String) {
         text = value,
         modifier = Modifier
             .fillMaxWidth()
-            .heightIn(min = 56.dp),
+            .heightIn(),
         style = TextStyle(
             fontSize = 18.sp,
             fontWeight = FontWeight.SemiBold,
@@ -52,13 +52,14 @@ fun CustomTextTitleLarge(value: String) {
         text = value,
         modifier = Modifier
             .fillMaxWidth()
-            .heightIn(min = 56.dp),
+            .heightIn(min = 40.dp),
         style = TextStyle(
             fontSize = 24.sp,
             fontWeight = FontWeight.SemiBold,
             fontStyle = FontStyle.Normal
         ),
-        color = ColorAppText
+        color = ColorAppText,
+        textAlign = TextAlign.Center
     )
 }
 
@@ -68,12 +69,13 @@ fun CustomTextTitleMedium(value: String) {
         text = value,
         modifier = Modifier
             .fillMaxWidth()
-            .heightIn(min = 56.dp),
+            .heightIn(),
         style = TextStyle(
-            fontSize = 36.sp,
+            fontSize = 30.sp,
             fontWeight = FontWeight.Medium,
             fontStyle = FontStyle.Normal
         ),
-        color = ColorAppText
+        color = ColorAppText,
+        textAlign = TextAlign.Center
     )
 }

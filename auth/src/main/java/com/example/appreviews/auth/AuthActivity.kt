@@ -12,11 +12,16 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.appreviews.auth.ui.theme.AppReviewsTheme
-import com.example.appreviews.core.navigations.Activities
+import com.example.appreviews.core.theme.CustomAppTheme
 import com.example.appreviews.core.navigations.Navigator
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class AuthActivity : ComponentActivity() {
+
+//    @Inject
+//    lateinit var provider: Navigator.Provider
     companion object{
         fun launchActivity(activity: Activity) {
             val intent = Intent(activity, AuthActivity::class.java)
@@ -27,7 +32,7 @@ class AuthActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AppReviewsTheme {
+            CustomAppTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -54,7 +59,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    AppReviewsTheme {
+    CustomAppTheme {
         Greeting("Android")
     }
 }

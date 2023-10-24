@@ -1,12 +1,12 @@
-package com.example.appreviews.auth.ui.theme
+package com.example.appreviews.core.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
-import com.example.appreviews.auth.R
-import com.jaiecom.karwaty.app_reviews.common.AppTextSize
+import com.example.appreviews.core.AppTextSize
+import com.example.appreviews.core.R
 
 
 val gothicA1 = FontFamily(
@@ -39,12 +39,6 @@ val Typography = Typography(
         fontWeight = FontWeight.Medium,
         fontSize = AppTextSize.appTextLabelMedium
     ),
-//    h4 = TextStyle(
-//        color = ColorAppText,
-//        fontFamily = gothicA1,
-//        fontWeight = FontWeight.Normal,
-//        fontSize = AppTextSize.appTextLabelRegular
-//    ),
 
     titleLarge = TextStyle(
         color = ColorAppText,

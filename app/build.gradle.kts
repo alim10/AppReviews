@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.com.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.kapt)
+//    alias(libs.plugins.ksp)
     alias(libs.plugins.dagger.hilt)
     alias(libs.plugins.googlePlayServices)
     alias(libs.plugins.firebaseCrashlytics)
@@ -65,7 +66,8 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+//        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.4.3"
     }
     packaging {
         resources {
@@ -104,6 +106,9 @@ dependencies {
     implementation(libs.retrofitConvertorScalor)
     implementation(libs.okhttp)
     implementation(libs.loggingInterceptor)
+
+    implementation(libs.coil)
+    implementation(libs.coilCompose)
 
     implementation(libs.hilt)
     kapt(libs.hiltCompiler)

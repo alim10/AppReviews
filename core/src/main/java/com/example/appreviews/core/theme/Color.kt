@@ -1,4 +1,4 @@
-package com.example.appreviews.auth.ui.theme
+package com.example.appreviews.core.theme
 
 import androidx.compose.ui.graphics.Color
 

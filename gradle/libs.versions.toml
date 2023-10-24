@@ -1,6 +1,9 @@
 [versions]
+#agp = "8.1.2"
+#kotlin = "1.8.10"
+
 agp = "8.1.2"
-kotlin = "1.9.0"
+kotlin = "1.8.10"
 core-ktx = "1.12.0"
 junit = "4.13.2"
 androidx-test-ext-junit = "1.1.5"
@@ -19,6 +22,8 @@ lifecycleVersion = "2.6.2"
 appcompat = "1.6.1"
 material = "1.10.0"
 
+coil = "2.4.0"
+
 
 
 retrofit_version = "2.7.1"
@@ -29,11 +34,13 @@ okhttp_logging_version = "5.0.0-alpha.3"
 
 
 #  dependecy  Injection versions
+ksp = "1.9.0-1.0.13"
 hilt_version = "2.44.2"
 hilt_compose_version = "1.0.0"
 composeMaterial = "1.2.1"
 storage = "1.4.2"
 engageCore = "1.3.0"
+constraintlayout = "2.1.4"
 #moshiKotlinCodegen = "1.15.0"
 #playServicesMaps = "18.2.0"
 
@@ -68,6 +75,10 @@ appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "a
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 
+coil = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
+coilCompose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+
+
 
 # Network dependency
 moshi = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshi_version" }
@@ -87,6 +98,7 @@ hiltAndroidTest = { group = "com.google.dagger",  name = "hilt-android-testing",
 hiltCompilerTest = { group = "com.google.dagger",  name = "hilt-android-compiler", version.ref = "hilt_version"}
 androidx-storage = { group = "androidx.test.services", name = "storage", version.ref = "storage" }
 engage-core = { group = "com.google.android.engage", name = "engage-core", version.ref = "engageCore" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
 
 [plugins]
@@ -100,11 +112,7 @@ firebaseCrashlytics = { id = "com.google.firebase.crashlytics", version.ref = "c
 
 #dagger-hilt = { id = "com.google.dagger.hilt.android" , version.ref = "hilt_version" }
 dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt_version" }
-#ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"}
-
-
-
-
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"}
 
 
 [bundles]

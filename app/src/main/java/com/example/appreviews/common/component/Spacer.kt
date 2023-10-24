@@ -10,7 +10,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.google.accompanist.insets.LocalWindowInsets
 
 //import com.google.accompanist.insets.LocalWindowInsets
 
@@ -59,6 +58,7 @@ fun ExtraLargeSpacer() = Spacer(
 /**
  * Spacer that has a height of a software keyboard
  */
+/*
 @Composable
 fun KeyboardSpacer(
     modifier: Modifier = Modifier,
@@ -68,4 +68,4 @@ fun KeyboardSpacer(
     val imeHeight = with(LocalDensity.current) { LocalWindowInsets.current.ime.bottom.toDp() }
     val height by animateDpAsState(if (imeVisible) confirmHeight(imeHeight) else 0.dp)
     Spacer(modifier.height(height))
-}
+}*/

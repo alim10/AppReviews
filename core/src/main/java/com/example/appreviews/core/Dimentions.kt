@@ -1,4 +1,4 @@
-package com.jaiecom.karwaty.app_reviews.common
+package com.example.appreviews.core
 
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
