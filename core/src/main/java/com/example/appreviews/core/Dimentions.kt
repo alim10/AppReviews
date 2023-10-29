@@ -51,15 +51,15 @@ object AppImageSize {
 }
 
 object AppPadding {
-    val pSmall = 3.dp
-    val pRegular = 5.dp
-    val pMedium = 8.dp
-    val pLarge = 10.dp
-    val pLargest = 16.dp
-    val pExtraLarge_x = 20.dp
-    val pExtraLarge_xx = 24.dp
-    val pExtraLarge_xxx = 32.dp
-    val pExtraLarge_xxxx = 45.dp
+    val pSmall_I = 3.dp
+    val pSmall = 5.dp
+    val pRegular = 7.dp
+    val pMedium = 10.dp
+    val pLarge = 16.dp
+    val pLarge_I = 20.dp
+    val pLarge_II = 24.dp
+    val pLarge_III = 32.dp
+    val pLarge_IIII = 45.dp
 }
 
 object AppElevation {

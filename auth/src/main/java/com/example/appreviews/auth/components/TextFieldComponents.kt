@@ -35,7 +35,6 @@ fun CustomOutlinedTextField(labelValue: String) {
     OutlinedTextField(
         label = { Text(text = labelValue) },
         value = textValue,
-//        textStyle = TextStyle(fontSize = 20.sp),
         colors = TextFieldDefaults.outlinedTextFieldColors(
             focusedBorderColor = ColorPrimary,
             focusedLabelColor = ColorPrimary,
@@ -50,7 +49,8 @@ fun CustomOutlinedTextField(labelValue: String) {
         onValueChange = {
             textValue = it
         },
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier.fillMaxWidth(),
+        
     )
 }
 

@@ -1,4 +1,4 @@
-package com.example.appreviews.common.component
+package com.jaiecom.karwaty.app_reviews.common.component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -7,16 +7,17 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
-import androidx.compose.material3.Text
+import androidx.compose.material.ContentAlpha
+import androidx.compose.material.LocalContentColor
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.appreviews.apps.AppCornerRadius
-import com.example.appreviews.apps.AppHeight
-import com.example.appreviews.apps.AppPadding
-import com.example.appreviews.core.theme.ColorGrayExtraLight1
-import com.example.appreviews.core.theme.Typography
-
+import com.jaiecom.karwaty.app_reviews.common.AppCornerRadius
+import com.jaiecom.karwaty.app_reviews.common.AppHeight
+import com.jaiecom.karwaty.app_reviews.common.AppPadding
+import com.jaiecom.karwaty.app_reviews.presentation.ui.theme.ColorGrayExtraLight1
+import com.jaiecom.karwaty.app_reviews.presentation.ui.theme.Typography
 
 
 @Composable
@@ -32,7 +33,7 @@ fun CustomEditField(
         onValueChange = {
             onTextChanged(it)
         },
-        textStyle = Typography.bodyMedium,
+        textStyle = Typography.body2,
         maxLines = maxLines,
         modifier = modifier
             .fillMaxWidth()
@@ -42,7 +43,7 @@ fun CustomEditField(
                 if (text.isEmpty()) {
                     Text(
                         text = hint,
-//                        color = LocalContentColor.current.copy(alpha = ContentAlpha.medium)
+                        color = LocalContentColor.current.copy(alpha = ContentAlpha.medium)
                     )
                 }
                 innerTextField()
@@ -67,7 +68,7 @@ fun CustomMultiLineTextField(
         onValueChange = {
             onTextChanged(it)
         },
-        textStyle = Typography.bodyMedium,
+        textStyle = Typography.body2,
         singleLine = maxLines == minLine,
         maxLines = maxLines,
         modifier = modifier
@@ -78,7 +79,7 @@ fun CustomMultiLineTextField(
                 if (text.isEmpty()) {
                     Text(
                         text = hint,
-//                        color = LocalContentColor.current.copy(alpha = ContentAlpha.medium)
+                        color = LocalContentColor.current.copy(alpha = ContentAlpha.medium)
                     )
                 }
                 innerTextField()
@@ -106,7 +107,7 @@ fun TwoLineTextField(
         onValueChange = {
             onTextChanged(it)
         },
-        textStyle = Typography.bodyMedium,
+        textStyle = Typography.body2,
 //        singleLine = maxLines == minLine,
         singleLine = false,
         maxLines = maxLines,
@@ -121,7 +122,7 @@ fun TwoLineTextField(
                 if (text.isEmpty()) {
                     Text(
                         text = hint,
-//                        color = LocalContentColor.current.copy(alpha = ContentAlpha.medium)
+                        color = LocalContentColor.current.copy(alpha = ContentAlpha.medium)
                     )
                 }
                 innerTextField()

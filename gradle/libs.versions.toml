@@ -41,6 +41,7 @@ composeMaterial = "1.2.1"
 storage = "1.4.2"
 engageCore = "1.3.0"
 constraintlayout = "2.1.4"
+core = "1.40.0"
 #moshiKotlinCodegen = "1.15.0"
 #playServicesMaps = "18.2.0"
 
@@ -99,6 +100,7 @@ hiltCompilerTest = { group = "com.google.dagger",  name = "hilt-android-compiler
 androidx-storage = { group = "androidx.test.services", name = "storage", version.ref = "storage" }
 engage-core = { group = "com.google.android.engage", name = "engage-core", version.ref = "engageCore" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+core = { group = "com.google.ar", name = "core", version.ref = "core" }
 
 
 [plugins]

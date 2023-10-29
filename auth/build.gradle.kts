@@ -70,6 +70,7 @@ dependencies {
     implementation(libs.androidx.storage)
     implementation(libs.engage.core)
     implementation(libs.constraintlayout)
+    implementation(libs.core)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)

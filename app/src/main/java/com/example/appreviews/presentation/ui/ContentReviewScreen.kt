@@ -46,25 +46,24 @@ import com.example.appreviews.app_reviews.domain.entities.ReviewEntity
 import com.example.appreviews.apps.AppBtnPadding
 import com.example.appreviews.apps.AppBtnWidth
 import com.example.appreviews.apps.AppButtonSize
-import com.example.appreviews.apps.AppCord
 import com.example.appreviews.apps.AppCornerPercentage
 import com.example.appreviews.apps.AppCornerRadius
 import com.example.appreviews.apps.AppIconSize
 import com.example.appreviews.apps.AppImageSize
 import com.example.appreviews.apps.AppPadding
 import com.example.appreviews.common.component.TwoLineTextField
-import com.example.appreviews.presentation.theme.AppReviewsTheme
-import com.example.appreviews.presentation.theme.ColorPrimary
-import com.example.appreviews.presentation.theme.ColorWhite
+import com.example.appreviews.core.theme.ColorPrimary
+import com.example.appreviews.core.theme.ColorWhite
+import com.example.appreviews.core.theme.MyAppTheme
+import com.example.appreviews.core.theme.Typography
 import com.example.appreviews.presentation.widgets.AppRatingBar
 import com.example.appreviews.presentation.widgets.AppRatingBarClickable
 import com.example.appreviews.presentation.widgets.AppSpacer
-import com.example.appreviews.presentation.theme.*
 
 
 @Composable
 fun ContentReviewScreen() {
-    AppReviewsTheme {
+    MyAppTheme {
 
         var rating by remember { mutableStateOf(0f) }
         Column(

@@ -10,7 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.Dp
 import com.example.appreviews.apps.AppIconSize
-import com.example.appreviews.presentation.theme.ColorWhite
+import com.example.appreviews.core.theme.ColorWhite
 
 @Composable
 fun AppSpacer(
