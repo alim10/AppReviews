@@ -1,4 +1,4 @@
-package com.example.appreviews.core
+package com.example.appreviews.apps
 
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -51,15 +51,15 @@ object AppImageSize {
 }
 
 object AppPadding {
-    val pSmall_I = 3.dp
-    val pSmall = 5.dp
-    val pRegular = 7.dp
-    val pMedium = 10.dp
-    val pLarge = 16.dp
-    val pLarge_I = 20.dp
-    val pLarge_II = 24.dp
-    val pLarge_III = 32.dp
-    val pLarge_IIII = 45.dp
+    val pSmall = 3.dp
+    val pRegular = 5.dp
+    val pMedium = 8.dp
+    val pLarge = 10.dp
+    val pLargest = 16.dp
+    val pExtraLarge_x = 20.dp
+    val pExtraLarge_xx = 24.dp
+    val pExtraLarge_xxx = 32.dp
+    val pExtraLarge_xxxx = 45.dp
 }
 
 object AppElevation {
@@ -109,7 +109,7 @@ object AppBtnPadding {
     val verticalMedium = 12.dp
     val verticalLarge = 16.dp
 }
-object AppTextSize {
+object AppText {
     val appTextLabelVerySmall = 9.sp
     val appTextLabelSmall = 11.sp
     val appTextLabelRegular = 13.sp
@@ -135,7 +135,9 @@ object AppHeight {
     val h_65 = 65.dp
     val h_72 = 72.dp
     val h_96 = 96.dp
+    val h_100 = 100.dp
     val h_120 = 120.dp
+    val h_150 = 150.dp
 
 }
 object AppIcon {

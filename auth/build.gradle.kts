@@ -45,6 +45,7 @@ android {
     composeOptions {
 //        kotlinCompilerExtensionVersion = "1.5.1"
         kotlinCompilerExtensionVersion = "1.4.3"
+//        kotlinCompilerExtensionVersion = "1.5.1"
     }
     packaging {
         resources {
@@ -70,6 +71,8 @@ dependencies {
     implementation(libs.androidx.storage)
     implementation(libs.engage.core)
     implementation(libs.constraintlayout)
+    implementation(libs.constraintlayoutCore)
+//    implementation(libs.constraintCompose)
     implementation(libs.core)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
@@ -99,4 +102,8 @@ dependencies {
     implementation(libs.loggingInterceptor)
 
     implementation(project(":core"))
+
+
+    implementation ("androidx.constraintlayout:constraintlayout-compose:1.0.0-beta02")
+
 }

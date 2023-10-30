@@ -68,6 +68,7 @@ android {
     composeOptions {
 //        kotlinCompilerExtensionVersion = "1.5.1"
         kotlinCompilerExtensionVersion = "1.4.3"
+//        kotlinCompilerExtensionVersion = "1.5.1"
     }
     packaging {
         resources {
@@ -79,6 +80,9 @@ android {
 dependencies {
     implementation ("androidx.core:core-splashscreen:1.0.0-beta02")
     implementation(libs.appcompat)
+    implementation(libs.constraintlayout)
+    implementation(libs.constraintlayoutCore)
+//    implementation(libs.constraintCompose)
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)

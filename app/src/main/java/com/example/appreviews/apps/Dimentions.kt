@@ -135,7 +135,9 @@ object AppHeight {
     val h_65 = 65.dp
     val h_72 = 72.dp
     val h_96 = 96.dp
+    val h_100 = 100.dp
     val h_120 = 120.dp
+    val h_150 = 150.dp
 
 }
 object AppIcon {

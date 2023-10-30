@@ -34,7 +34,9 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.constraintlayout)
+    implementation(libs.constraintlayoutCore)
+//    implementation(libs.constraintCompose)
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)

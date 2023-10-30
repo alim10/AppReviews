@@ -1,16 +1,27 @@
 package com.example.appreviews.auth.components
 
 
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.icons.Icons
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
+import androidx.compose.material3.TextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
@@ -22,16 +33,62 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.input.VisualTransformation
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.appreviews.auth.R
+import androidx.compose.foundation.layout.heightIn
+import com.example.appreviews.auth.screen.SignupScreen
+import com.example.appreviews.core.AppBorder
+import com.example.appreviews.core.AppCornerRadius
+import com.example.appreviews.core.AppHeight
+import com.example.appreviews.core.AppPadding
+import com.example.appreviews.core.theme.ColorAppText
+import com.example.appreviews.core.theme.ColorGrayExtraLight
+import com.example.appreviews.core.theme.ColorGrayExtraLight1
+import com.example.appreviews.core.theme.Typography
+import com.example.appreviews.core.theme.ColorGrayLight
 import com.example.appreviews.core.theme.ColorPrimary
 
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CustomOutlinedTextField(labelValue: String) {
-    var textValue by remember { mutableStateOf("Outlined Text") }
+    var textValue by remember { mutableStateOf("") }
+    var isPasswordShow by remember { mutableStateOf(false) }
+
+    OutlinedTextField(
+        label = { Text(text = labelValue) },
+        value = textValue,
+        shape = RoundedCornerShape(AppCornerRadius.large),
+        colors = TextFieldDefaults.outlinedTextFieldColors(
+            focusedBorderColor = ColorPrimary,
+            focusedLabelColor = ColorPrimary,
+            cursorColor = ColorPrimary,
+        ),
+        keyboardOptions = KeyboardOptions.Default,
+        keyboardActions = KeyboardActions(
+            onDone = {
+                // Handle the "Done" action
+            }
+        ),
+        onValueChange = {
+            textValue = it
+        },
+        modifier = Modifier.fillMaxWidth()
+
+        )
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun CustomOutlinedTextField1(labelValue: String) {
+    var textValue by remember { mutableStateOf("") }
+    var isPasswordShow by remember { mutableStateOf(false) }
+
     OutlinedTextField(
         label = { Text(text = labelValue) },
         value = textValue,
@@ -50,9 +107,130 @@ fun CustomOutlinedTextField(labelValue: String) {
             textValue = it
         },
         modifier = Modifier.fillMaxWidth(),
-        
+
+        )
+}
+//
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun PasswordTextField(labelValue: String) {
+    var textValue by remember { mutableStateOf("") }
+    var isPasswordShow by remember { mutableStateOf(false) }
+
+    OutlinedTextField(
+        label = { Text(text = labelValue) },
+        value = textValue,
+        shape = RoundedCornerShape(AppCornerRadius.large),
+        colors = TextFieldDefaults.outlinedTextFieldColors(
+            focusedBorderColor = ColorPrimary,
+            focusedLabelColor = ColorPrimary,
+            cursorColor = ColorPrimary,
+        ),
+        keyboardOptions = KeyboardOptions.Default,
+        keyboardActions = KeyboardActions(
+            onDone = {
+                // Handle the "Done" action
+            }
+        ),
+        onValueChange = {
+            textValue = it
+        },
+        modifier = Modifier.fillMaxWidth(),
+//        trailingIcon = Icon(painter = painterResource(id = R.drawable.ic_password_visible), contentDescription = "")
+
     )
 }
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun CustomPasswordTextField(labelValue: String) {
+    var textValue by remember { mutableStateOf("") }
+    var isPasswordShow by remember { mutableStateOf(false) }
+
+    TextField(
+        modifier = Modifier
+            .fillMaxWidth()
+            .border(
+                BorderStroke(AppBorder.regular, ColorGrayLight),
+                shape = RoundedCornerShape(AppCornerRadius.large_I)
+            ),
+        placeholder = { Text(text = labelValue) },
+        value = textValue,
+        colors = TextFieldDefaults.textFieldColors(
+//            focusedLabelColor = ColorPrimary,
+//            unfocusedLabelColor = ColorPrimary,
+//            cursorColor = ColorPrimary,
+//            focusedIndicatorColor = Color.Transparent,
+//            unfocusedIndicatorColor = Color.Transparent,
+
+
+//            textColor = Color.Gray,
+            disabledTextColor = Color.Transparent,
+//            backgroundColor = Color.White,
+            focusedIndicatorColor = Color.Transparent,
+            unfocusedIndicatorColor = Color.Transparent,
+            disabledIndicatorColor = Color.Transparent
+
+        ),
+        keyboardOptions = KeyboardOptions.Default,
+        keyboardActions = KeyboardActions(
+            onDone = {
+                // Handle the "Done" action
+            }
+        ),
+        onValueChange = {
+            textValue = it
+        },
+//        trailingIcon = Icon(
+//            painter = painterResource(id = R.drawable.ic_password_visible),
+//            contentDescription = ""
+//        )
+    )
+
+}
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun CustomPasswordTextField1(labelValue: String) {
+    var textValue by remember { mutableStateOf("") }
+    var isPasswordShow by remember { mutableStateOf(false) }
+
+    TextField(
+        modifier = Modifier
+            .fillMaxWidth()
+            .border(
+                BorderStroke(AppBorder.regular, ColorGrayLight),
+                shape = RoundedCornerShape(AppCornerRadius.large_I)
+            ),
+        label = { Text(text = labelValue) },
+        value = textValue,
+        colors = TextFieldDefaults.outlinedTextFieldColors(
+            focusedBorderColor = ColorPrimary,
+            focusedLabelColor = ColorPrimary,
+            cursorColor = ColorPrimary,
+
+        ),
+        keyboardOptions = KeyboardOptions.Default,
+        keyboardActions = KeyboardActions(
+            onDone = {
+                // Handle the "Done" action
+            }
+        ),
+        onValueChange = {
+            textValue = it
+        },
+//        trailingIcon = Icon(
+//            painter = painterResource(id = R.drawable.ic_password_visible),
+//            contentDescription = ""
+//        )
+    )
+
+}
+
+@Preview
+@Composable
+fun DefaultPreviewSignup() {
+}
+
 
 @Composable
 fun CustomOutlinedTextField() {
@@ -60,7 +238,7 @@ fun CustomOutlinedTextField() {
 
     BasicTextField(
         value = text,
-        onValueChange = { str->
+        onValueChange = { str ->
             text = str
         },
 
@@ -80,6 +258,50 @@ fun CustomOutlinedTextField() {
             }
         }
     )
+}
+
+
+
+@Composable
+fun TwoLineTextField(
+    text: String,
+    onTextChanged: (String) -> Unit,
+
+
+    modifier: Modifier = Modifier,
+    hint: String = "",
+    minLine: Int = 1,
+    maxLines: Int = 1,
+) {
+
+    BasicTextField(
+        value = text,
+        onValueChange = {
+            onTextChanged(it)
+        },
+        textStyle = Typography.bodyMedium,
+//        singleLine = maxLines == minLine,
+        singleLine = false,
+        maxLines = maxLines,
+        modifier = modifier
+            .fillMaxWidth()
+            .background(color = ColorGrayExtraLight,
+                shape = RoundedCornerShape(AppCornerRadius.large) )
+            .heightIn(AppHeight.h_65)
+            .padding(AppPadding.pRegular), // Adjust padding according to your layout
+        decorationBox = { innerTextField ->
+            Box(modifier = Modifier) {
+                if (text.isEmpty()) {
+                    Text(
+                        text = hint,
+//                        color = LocalContentColor.current.copy(alpha = ContentAlpha.medium)
+                    )
+                }
+                innerTextField()
+            }
+        }
+    )
+
 }
 
 

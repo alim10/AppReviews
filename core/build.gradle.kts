@@ -58,6 +58,9 @@ dependencies {
 
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
+    implementation(libs.constraintlayout)
+    implementation(libs.constraintlayoutCore)
+//    implementation(libs.constraintCompose)
     implementation(libs.material)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
