@@ -103,7 +103,6 @@ dependencies {
 
     implementation(project(":core"))
 
-
-    implementation ("androidx.constraintlayout:constraintlayout-compose:1.0.0-beta02")
-
+    implementation("com.github.JoelKanyi:KomposeCountryCodePicker:1.0.6")
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.23.1")
 }

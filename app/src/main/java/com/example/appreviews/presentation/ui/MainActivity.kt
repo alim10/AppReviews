@@ -48,7 +48,6 @@ import com.example.appreviews.apps.AppHeight
 import com.example.appreviews.apps.AppPadding
 import com.example.appreviews.apps.AppSize
 import com.example.appreviews.auth.AuthActivity
-import com.example.appreviews.common.component.LargeSpacer
 import com.example.appreviews.core.navigations.Activities
 import com.example.appreviews.core.navigations.Navigator
 import com.example.appreviews.core.theme.ColorDefaultIcon
@@ -120,11 +119,11 @@ fun ContentUI(context: Activity, provider: Navigator.Provider) {
                 )
             )
         }
-        LargeSpacer()
-        LargeSpacer()
-        LargeSpacer()
-        LargeSpacer()
-        LargeSpacer()
+//        LargeSpacer()
+//        LargeSpacer()
+//        LargeSpacer()
+//        LargeSpacer()
+//        LargeSpacer()
         Button(
             onClick = {
                 moveToNextActivity(context, provider)
@@ -140,9 +139,9 @@ fun ContentUI(context: Activity, provider: Navigator.Provider) {
             )
         }
 
-        LargeSpacer()
-        LargeSpacer()
-        LargeSpacer()
+//        LargeSpacer()
+//        LargeSpacer()
+//        LargeSpacer()
 
         Button(
             onClick = {
@@ -192,10 +191,10 @@ fun ContentUI(context: Activity, provider: Navigator.Provider) {
                 contentDescription = null
             )
         }
-
-        LargeSpacer()
-        LargeSpacer()
-        LargeSpacer()
+//
+//        LargeSpacer()
+//        LargeSpacer()
+//        LargeSpacer()
 
     }
 }
@@ -205,7 +204,8 @@ fun startActivity(intent: Intent) {
 }
 
 fun moveToNextActivity(context: Activity, provider: Navigator.Provider) {
-    provider.getActivities(Activities.AuthActivity).navigate(context)
+//    provider.getActivities(Activities.AuthActivity).navigate(context)
+    provider.getActivities(Activities.AuthActivity1).navigate(context)
 }
 
 @Preview(showBackground = true)

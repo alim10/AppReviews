@@ -14,7 +14,10 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -27,17 +30,19 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.appreviews.apps.AppHeight
-import com.example.appreviews.apps.AppPadding
 import com.example.appreviews.auth.components.CustomButton
 import com.example.appreviews.auth.components.CustomOutlinedTextField
 import com.example.appreviews.auth.components.CustomTextTitle
 import com.example.appreviews.auth.components.CustomTextTitleMedium
 
 import com.example.appreviews.core.R
+import com.example.appreviews.core.theme.AppHeight
+import com.example.appreviews.core.theme.AppPadding
 import com.example.appreviews.core.theme.ColorDefaultIcon
 import com.example.appreviews.core.theme.ColorGrayLight
 import com.example.appreviews.core.theme.ColorWhite
+import com.example.appreviews.core.theme.MyAppTheme
+
 
 @Composable
 fun LoginScreen() {
@@ -47,7 +52,7 @@ fun LoginScreen() {
         modifier = Modifier
             .fillMaxSize()
             .background(ColorWhite)
-            .padding(AppPadding.pLarge)
+            .padding(AppPadding.large)
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally
@@ -78,8 +83,8 @@ fun LoginScreen() {
                     modifier = Modifier
                         .align(Alignment.Center)
                         .size(AppHeight.h_120, AppHeight.h_120)
-                        .padding(all = AppPadding.pLarge)
-                        .border(AppPadding.pRegular, ColorGrayLight, CircleShape)
+                        .padding(all = AppPadding.large)
+                        .border(AppPadding.regular, ColorGrayLight, CircleShape)
                         .clip(CircleShape),
 
                     contentScale = ContentScale.Fit,
@@ -99,14 +104,16 @@ fun LoginScreen() {
             CustomTextTitle(value = stringResource(id = R.string.txt_login))
             CustomTextTitleMedium(value = stringResource(id = R.string.txt_login))
 
-            CustomOutlinedTextField(labelValue = stringResource(id = R.string.txt_user_name))
+            CustomOutlinedTextField(labelValue = stringResource(id = R.string.txt_user_name),
+                painterResource(id = R.drawable.ic_profile))
             Spacer(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(18.dp)
             )
 
-            CustomOutlinedTextField(labelValue = stringResource(id = R.string.txt_password))
+            CustomOutlinedTextField(labelValue = stringResource(id = R.string.txt_password),
+                painterResource(id = R.drawable.ic_profile))
 
             Spacer(
                 modifier = Modifier
@@ -134,3 +141,4 @@ fun LoginScreen() {
 fun DefaultPreviewLogin() {
     LoginScreen()
 }
+

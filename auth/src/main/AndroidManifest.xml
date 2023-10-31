@@ -11,6 +11,10 @@
             android:exported="false"
             android:label="@string/title_activity_main"/>
         <activity
+            android:name=".AuthActivity1"
+            android:exported="false"
+            android:label="@string/title_activity_main"/>
+        <activity
             android:name=".ForgotPassActivity"
             android:exported="false"/>
     </application>

@@ -16,12 +16,12 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven("https://jitpack.io")
     }
 }
 
 rootProject.name = "AppReviews"
 include(":app")
-//include(":common")
 include(":core")
 include(":auth")
 include(":profile")

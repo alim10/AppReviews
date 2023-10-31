@@ -12,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.appreviews.auth.screen.SignupScreen
 import com.example.appreviews.core.navigations.Navigator
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -36,7 +37,9 @@ class AuthActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+//                    Greeting("Android")
+
+                    SignupScreen()
                 }
             }
         }

@@ -1,11 +1,8 @@
 package com.example.appreviews.auth.components
 
-import android.widget.Button
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.wrapContentHeight
-import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.material3.Button
 import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.Text
@@ -17,10 +14,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.appreviews.core.AppBtnWidth
-import com.example.appreviews.core.AppButtonSize
-import com.example.appreviews.core.AppHeight
-import com.example.appreviews.core.theme.*
+import com.example.appreviews.core.theme.AppBtnWidth
+import com.example.appreviews.core.theme.AppHeight
+import com.example.appreviews.core.theme.ColorAppText
+import com.example.appreviews.core.theme.ColorWhite
 
 @Composable
 fun CustomButtonSmall(value: String) {

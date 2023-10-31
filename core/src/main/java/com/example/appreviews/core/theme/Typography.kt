@@ -24,63 +24,63 @@ val Typography = Typography(
         color = ColorAppText,
         fontFamily = gothicA1,
         fontWeight = FontWeight.Bold,
-        fontSize = AppTextSize.appTextLabelLargest
+        fontSize = AppTextSize.textLabelLarge_I
     ),
     headlineMedium = TextStyle(
         color = ColorAppText,
         fontFamily = gothicA1,
         fontWeight = FontWeight.SemiBold,
-        fontSize = AppTextSize.appTextLabelLarge
+        fontSize = AppTextSize.textLabelLarge
     ),
     headlineSmall = TextStyle(
         color = ColorAppText,
         fontFamily = gothicA1,
         fontWeight = FontWeight.Medium,
-        fontSize = AppTextSize.appTextLabelMedium
+        fontSize = AppTextSize.textLabelMedium
     ),
 
     titleLarge = TextStyle(
         color = ColorAppText,
         fontFamily = gothicA1,
         fontWeight = FontWeight.Medium,
-        fontSize = AppTextSize.appTextMedium
+        fontSize = AppTextSize.textMedium
     ),
     titleMedium = TextStyle(
         color = ColorAppText,
         fontFamily = gothicA1,
         fontWeight = FontWeight.Medium,
-        fontSize = AppTextSize.appTextRegular
+        fontSize = AppTextSize.textRegular
     ),
 
     bodyLarge = TextStyle(
         color = ColorAppTextLight,
         fontFamily = gothicA1,
         fontWeight = FontWeight.Normal,
-        fontSize = AppTextSize.appTextRegular
+        fontSize = AppTextSize.textRegular
     ),
     bodyMedium = TextStyle(
         color = ColorAppTextLight,
         fontFamily = gothicA1,
         fontWeight = FontWeight.Normal,
-        fontSize = AppTextSize.appTextLabelRegular,
+        fontSize = AppTextSize.textLabelRegular,
     ),
     bodySmall = TextStyle(
         color = ColorAppTextLight,
         fontFamily = gothicA1,
         fontWeight = FontWeight.Normal,
-        fontSize = AppTextSize.appTextLabelRegular,
+        fontSize = AppTextSize.textLabelRegular,
     ),
     labelMedium = TextStyle(
         color = ColorAppTextExtraLight,
         fontFamily = gothicA1,
         fontWeight = FontWeight.Thin,
-        fontSize = AppTextSize.appTextSmall
+        fontSize = AppTextSize.textSmall
     ),
     labelSmall = TextStyle(
         color = ColorAppTextLight,
         fontFamily = gothicA1,
         fontWeight = FontWeight.Normal,
-        fontSize = AppTextSize.appTextLabelSmall
+        fontSize = AppTextSize.textLabelSmall
     ),
 
 
