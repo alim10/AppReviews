@@ -5,8 +5,8 @@ plugins {
     alias(libs.plugins.kotlin.kapt)
 //    alias(libs.plugins.ksp)
     alias(libs.plugins.dagger.hilt)
-    alias(libs.plugins.googlePlayServices)
-    alias(libs.plugins.firebaseCrashlytics)
+//    alias(libs.plugins.googlePlayServices)
+//    alias(libs.plugins.firebaseCrashlytics)
 
 }
 
@@ -100,8 +100,8 @@ dependencies {
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
 
-    implementation(platform(libs.firebaseBom))
-    implementation(libs.firebaseAnalytics)
+//    implementation(platform(libs.firebaseBom))
+//    implementation(libs.firebaseAnalytics)
     implementation(libs.viewModel)
     implementation(libs.viewModelRuntime)
     implementation(libs.composeViewModel)

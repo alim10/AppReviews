@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Karwaty</string>
+    <string name="app_name">Let\'s Connect</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_discover">Discover</string>
     <string name="title_listing">Listing</string>
