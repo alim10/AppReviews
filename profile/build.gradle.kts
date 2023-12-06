@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.appreviews.profile"
+    namespace = "com.alim.letsconnect.profile"
     compileSdk = 34
 
     defaultConfig {

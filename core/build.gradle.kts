@@ -4,12 +4,10 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.dagger.hilt)
-//    alias(libs.plugins.googlePlayServices)
-//    alias(libs.plugins.firebaseCrashlytics)
 }
 
 android {
-    namespace = "com.example.appreviews.core"
+    namespace = "com.alim.letsconnect.core"
     compileSdk = 34
 
     defaultConfig {
@@ -85,7 +83,4 @@ dependencies {
     implementation(libs.retrofitConvertorScalor)
     implementation(libs.okhttp)
     implementation(libs.loggingInterceptor)
-
-
-
 }

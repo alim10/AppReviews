@@ -10,7 +10,7 @@ plugins {
 
 
 android {
-    namespace = "com.example.appreviews.auth"
+    namespace = "com.alim.letsconnect.auth"
     compileSdk = 34
 
     defaultConfig {
