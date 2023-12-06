@@ -16,7 +16,7 @@ import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.example.appreviews.R
+import com.alim.letsconnect.R
 import com.example.appreviews.apps.AppIconSize
 import com.example.appreviews.apps.AppPadding
 

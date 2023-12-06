@@ -41,7 +41,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
-import com.example.appreviews.R
+import com.alim.letsconnect.R
 import com.example.appreviews.app_reviews.domain.entities.ReviewEntity
 import com.example.appreviews.apps.AppBtnPadding
 import com.example.appreviews.apps.AppBtnWidth

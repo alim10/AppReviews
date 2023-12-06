@@ -11,11 +11,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.appreviews"
+    namespace = "com.alim.letsconnect"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.appreviews"
+        applicationId = "com.alim.letsconnect"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

@@ -43,7 +43,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.example.appreviews.R
+import com.alim.letsconnect.R
 import com.example.appreviews.apps.AppHeight
 import com.example.appreviews.apps.AppPadding
 import com.example.appreviews.apps.AppSize
