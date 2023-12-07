@@ -88,8 +88,8 @@ jobs:
       - id: Auth
         uses: google-github-actions/auth@v1
         with:
-          project_id: ${{ secrets.CICDPROJECT_FIREBASE_PROJECT_ID }}
-          credentials_json: ${{ secrets.CICDPROJECT_FIREBASE_TEST_LAB_AUTH }}
+          project_id: ${{ secrets.FIREBASE_APP_ID }}
+          credentials_json: ${{ secrets.FIREBASE_CREDENTIAL_FILE }}
 
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@v0
