@@ -1,4 +1,4 @@
-name: Deploy to Firebase
+name: Deploy to Firebase distribution
 
 on:
   workflow_dispatch:
@@ -32,9 +32,6 @@ jobs:
 
       - name: Debug APK File
         run: ls -l app/build/outputs/apk/debug/
-
-#      - name: Check Firebase CLI Version
-#        run: firebase --version
 
       - name: Upload Artifact to Firebase App Distribution
         uses: wzieba/Firebase-Distribution-Github-Action@v1

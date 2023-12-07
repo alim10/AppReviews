@@ -3,11 +3,8 @@ plugins {
     alias(libs.plugins.com.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.kapt)
-//    alias(libs.plugins.ksp)
     alias(libs.plugins.dagger.hilt)
     alias(libs.plugins.googlePlayServices)
-//    alias(libs.plugins.firebaseCrashlytics)
-
 }
 
 android {
@@ -18,17 +15,22 @@ android {
         applicationId = "com.alim.letsconnect"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 4
+        versionName = "1.0.4"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
+
+        ndk {
+            debugSymbolLevel = "FULL"
+        }
     }
     buildFeatures {
         buildConfig  = true
     }
+
 
     buildTypes {
         release {
@@ -66,7 +68,6 @@ android {
     }
 
     composeOptions {
-//        kotlinCompilerExtensionVersion = "1.5.1"
         kotlinCompilerExtensionVersion = "1.4.3"
 //        kotlinCompilerExtensionVersion = "1.5.1"
     }
