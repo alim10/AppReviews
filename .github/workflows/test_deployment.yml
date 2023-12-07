@@ -2,7 +2,7 @@ name: Publish
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "testing" ]
 
 jobs:
 
@@ -172,6 +172,6 @@ jobs:
           packageName: com.alim.letsconnect
           releaseFiles: app/build/outputs/bundle/release/app-release.aab
           track: internal
-          status: 'completed'
+          status: 'draft'
           whatsNewDirectory: whatsNewDirectory/
 
