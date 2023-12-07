@@ -171,8 +171,7 @@ jobs:
 #          serviceAccountJson: service_account.json
           packageName: com.alim.letsconnect
           releaseFiles: app/build/outputs/bundle/release/app-release.aab
-          track: alpha
-          status: 'draft'
-#          status: 'completed'
+          track: internal
+          status: 'completed'
           whatsNewDirectory: whatsNewDirectory/
 
