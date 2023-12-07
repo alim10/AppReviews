@@ -1,10 +1,10 @@
-name: Android Reviews App
+name: Android App build test
 
 on:
   push:
-    branches: [ "testing" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "testing" ]
+    branches: [ "master" ]
 
 jobs:
   build:
