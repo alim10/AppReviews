@@ -172,6 +172,10 @@ jobs:
           packageName: com.alim.letsconnect
           releaseFiles: app/build/outputs/bundle/release/app-release.aab
           track: internal
+<<<<<<< HEAD
           status: 'completed'
+=======
+          status: 'draft'
+>>>>>>> 9716bbb1888df038410780579ba02f408a242bb4
           whatsNewDirectory: whatsNewDirectory/
 
